@@ -24,13 +24,17 @@ Example Code
 ------------
 
 ### HTML:
+```html
+ <p id="myText">Original Text</p>
+```
 
-            <p id="myText">Original Text</p>
 
 
 ### JavaScript:
+```javascript
+document.getElementById("myText").innerText = "The text has been updated!";
+```
 
-        document.getElementById("myText").innerText = "The text has been updated!";
 
 
 Why is the DOM Important?

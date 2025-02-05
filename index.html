@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to the DOM</title>
+    <script type="module" src="script.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            text-align: left;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Introduction to the DOM (Document Object Model)</h1>
+
+    <h2>What is the DOM?</h2>
+    <p>The DOM (Document Object Model) is a programming interface for web documents. It represents the structure of an HTML document as a tree of objects. It allows scripts (JavaScript) to manipulate content, structure, and style dynamically.</p>
+
+    <h2>Structure of the DOM</h2>
+    <p>The document is structured as a hierarchical tree. Each element (e.g., <code>&lt;html&gt;</code>, <code>&lt;body&gt;</code>, <code>&lt;p&gt;</code>) is a node in the tree. Nodes include elements, attributes, and text.</p>
+
+    <h2>Interacting with the DOM using JavaScript</h2>
+    <ul>
+        <li><strong>Selecting elements:</strong> <code>document.getElementById()</code>, <code>document.querySelector()</code></li>
+        <li><strong>Modifying content:</strong> <code>.innerText</code>, <code>.innerHTML</code>, <code>.textContent</code></li>
+        <li><strong>Changing styles:</strong> <code>.style</code> property</li>
+        <li><strong>Adding event listeners:</strong> <code>addEventListener()</code></li>
+    </ul>
+
+    <h2>Example Code</h2>
+    <h3>HTML:</h3>
+    <pre>
+            &lt;p id="myText"&gt;Original Text&lt;/p&gt;
+    </pre>
+
+    <h3>JavaScript:</h3>
+    <pre>
+        document.getElementById("myText").innerText = "The text has been updated!";
+    </pre>
+
+    <h2>Why is the DOM Important?</h2>
+    <p>Enables interactive and dynamic webpages. Allows real-time content updates without reloading the page. Forms the foundation of modern web development with JavaScript frameworks.</p>
+</div>
+<p id="myText">Original Text</p>
+</body>
+</html>
